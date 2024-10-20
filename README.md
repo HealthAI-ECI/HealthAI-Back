@@ -1,91 +1,209 @@
-## Hi there 👋👋
+# HEALTHIA- BACKEND
 
-<img width="35%" align="center" alt="Github" src="https://user-images.githubusercontent.com/48678280/88862734-4903af80-d201-11ea-968b-9c939d88a37c.gif" />
+---
+## Description
 
-***
+This is the backend of the HealthIA project. It is a RESTful API that provides the necessary endpoints to interact with the database.
+this rest serve lets:
+- Create a new user
+- Update user information
+- Delete user
+- Get user information
+- Get all users
+---
 
-* _My name is Sebastian Zamora Urrego, a colombian student of software Engieneer._
-* _I am currently last year studying at the Colombian School of Engieneering Julio Garavito._
+## Class Design
+The backend is designed with the following classes:
+- UserEntitly: this class is used to create a user object.
+- UserDTO: this class is used to transfer user data between the controller and the service.
+- UserException: this class is used to handle exceptions.
+- UserRepository: this class is used to interact with the database.
+- UserService: this class is used to interact with the repository and perform the necessary operations.
+- UserController: this class is used to interact with the service and provide the necessary endpoints.
+- HealthiaApplication: this class is the main.
+- RoleEntity: The kind of role a user can have.
 
-* _I am interested in learning about the world of software development and the different technologies that exist._
+The extra classes are:
+- SecurityConfig: this class is used to configure the security of the application.
+- JwtUtil: this class is used to generate and validate JWT tokens.
+- JwtAuthenticationFilter: this class is used to authenticate the user.
+- JwtAuthorizationFilter: this class is used to authorize the user.
+- UserDetailsServiceImp: this class is used to load the user from the database.
 
-* _I am a beginner in the world of programming and I am eager to learn and improve my skills._
+---
+## Project Execution
+### Requirements:
+* __Java__: Version 11 or higher.
+* __JDK__: Java Development Kit - version 8 or higher.
+* __Browser__: Any browser to open the web application.
+* __Maven__: To compile the project.
 
-* _I am a curious person and I like to learn about new things and technologies._
+> [!IMPORTANT]
+> In this project, Java version 17 and Maven 3.9.5 were used.
+---
 
-## Stats 
+## Installation
 
-<div aling="center">
-   <table style="border-collapse: collapse; width: 100%;">
-        <tr>
-            <td style="border: none; padding: 0; margin: 0;">
-                <img src="https://github-readme-streak-stats.herokuapp.com/?user=SebZaUr&theme=dracula&hide_border=false" alt="GitHub Contributions" style="width: 100%; height: auto;"/>
-            </td>
-            <td style="border: none; padding: 0; margin: 0;">
-                <img src="https://github-readme-stats.vercel.app/api?username=SebZaUr&theme=dracula&show_icons=true&hide_border=false&count_private=true" alt="GitHub Stats" style="width: 100%; height: auto;"/>
-            </td>
-        </tr>
-        <tr>
-            <td style="border: none; padding: 0; margin: 0;">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SebZaUr&theme=dracula&show_icons=true&hide_border=false&layout=compact" alt="GitHub Languages" style="width: 100%; height: 250px; object-fit: cover;"/>
-            </td>
-            <td style="border: none; padding: 0; margin: 0;">
-                <img src="https://github-contributor-stats.vercel.app/api?username=SebZaUr&limit=5&theme=dracula&combine_all_yearly_contributions=true" alt="GitHub Languages" style="width: 100%; height: auto;"/>
-            </td>
-        </tr>
-    </table>
-</div>
+* First, download the project:
 
-## Activity
+    ```bash
+    git clone https://github.com/HealthAI-ECI/HealthAI-Back.git
+    ```
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=SebZaUr&theme=dracula&hide_border=false)
+* Enter the project directory:
 
-## 💻 Tech and Tools
+    ```bash
+    cd HealthIa-Back
+    ```
 
-<div aling="center">
-   <table style="border-collapse: collapse; width: 100%;">
-        <tr>
-            <td style="border: none; padding: 0; margin: 0;">
-                <img src="https://skillicons.dev/icons?i=angular,bash,bootstrap,css,git,html,java,markdown,mongodb,mysql,npm,py,spring&perline=7" alt="GitHub Contributions" style="width: 100%; height: auto;"/>
-            </td>
-            <td style="border: none; padding: 0; margin: 0;">
-                <img src="https://skillicons.dev/icons?i=azure,docker,eclipse,figma,github,githubactions,idea,kali,latex,linux,maven,postman,pycharm,vim,vscode,windows&perline=7" alt="GitHub Stats" style="width: 100%; height: auto; padding: 20px;"/>
-            </td>
-        </tr>
-  </table>
-</div>
+* Compile the project using Maven:
 
-## 👨‍💻 Proyects
+    ```bash
+    mvn clean install
+    ```
 
-[![Comandos](https://github-readme-stats.vercel.app/api/pin/?username=SebZaUr&repo=Comandos&theme=dracula&hide_border=false)](https://github.com/SebZaUr/Comandos)
+* Run the project:
 
-[![FoodExpress](https://github-readme-stats.vercel.app/api/pin/?username=SebZaUr&repo=FoodExpress&theme=dracula&hide_border=false)](https://github.com/SebZaUr/FoodExpress)
+    ```bash
+    mvn spring-boot:run
+    ```
 
-[![MundoFutbol](https://github-readme-stats.vercel.app/api/pin/?username=SebZaUr&repo=MundoFutbol&theme=dracula&hide_border=false)](https://github.com/SebZaUr/MundoFutbol)
+* To access the project, you can click on the following link: [Click here](http://localhost:8080/)
 
-[![DaPoos](https://github-readme-stats.vercel.app/api/pin/?username=SebZaUr&repo=DaPoos&theme=dracula&hide_border=false)](https://github.com/SebZaUr/DaPoos)
+---
 
-[![PoobStairs](https://github-readme-stats.vercel.app/api/pin/?username=SebZaUr&repo=PoobStairs&theme=dracula&hide_border=false)](https://github.com/SebZaUr/PoobStairs)
+## Testing:
 
-<table width="100%" align="center">
-  <tr>
-    <td align="center">
-      <h1>
-        <a href="https://git.io/typing-svg">
-          <img src="https://readme-typing-svg.herokuapp.com/?lines=Fighting+with+this+;since+2019&center=true&size=30&color=00ff00" alt="Typing SVG" />
-        </a>
-      </h1>
-    </td>
+### Tests in `HealtIaBackApplicationTests.java`
 
-# How Reach Me
+1. **contextLoads**
+    - **Description**: Verifies that the application context loads correctly.
+    - **Method**: `contextLoads()`
+    - **Expected Result**: The application context loads without errors.
 
-[![Gmail](https://skillicons.dev/icons?i=gmail)](mailto:sebassele2008@gmail.com) [![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/sebastian-zamora-urrego-b777a9196/)
+2. **testCreateUser_Success**
+    - **Description**: Verifies that creating a user is successful.
+    - **Method**: `testCreateUser_Success()`
+    - **Expected Result**: The controller response is `201 Created`.
 
-<table>
-    <td align="right">
-      <a href="https://visitcount.itsvg.in">
-        <img src="https://visitcount.itsvg.in/api?id=SebZaUr&icon=0&color=3" alt="Visit Count" />
-      </a>
-    </td>
-  </tr>
-</table>
+3. **testGetUser_Success**
+    - **Description**: Verifies that retrieving an existing user is successful.
+    - **Method**: `testGetUser_Success()`
+    - **Expected Result**: The controller response is `202 Accepted` and the response body contains the user.
+
+4. **testGetUser_NotFound**
+    - **Description**: Verifies that retrieving a non-existent user returns a `404 Not Found` error.
+    - **Method**: `testGetUser_NotFound()`
+    - **Expected Result**: The controller response is `404 Not Found` and the response body contains the error message `USER_NOT_FOUND`.
+
+5. **testUpdateUser_Success**
+    - **Description**: Verifies that updating a user is successful.
+    - **Method**: `testUpdateUser_Success()`
+    - **Expected Result**: The controller response is `202 Accepted`.
+
+6. **testDeleteUser_Success**
+    - **Description**: Verifies that deleting a user is successful.
+    - **Method**: `testDeleteUser_Success()`
+    - **Expected Result**: The controller response is `202 Accepted` and the response body contains the message `User deleted successfully`.
+
+7. **testDeleteUser_NotFound**
+    - **Description**: Verifies that deleting a non-existent user returns a `404 Not Found` error.
+    - **Method**: `testDeleteUser_NotFound()`
+    - **Expected Result**: The controller response is `404 Not Found` and the response body contains the error message `USER_NOT_FOUND`.
+
+### Tests in `UserServiceTest.java`
+
+1. **showAllUsers_ReturnsUserList**
+    - **Description**: Verifies that the service returns a list of users.
+    - **Method**: `showAllUsers_ReturnsUserList()`
+    - **Expected Result**: The service returns a list containing one user.
+
+2. **getUser_ReturnsUser_WhenExists**
+    - **Description**: Verifies that the service returns a user when the user exists.
+    - **Method**: `getUser_ReturnsUser_WhenExists()`
+    - **Expected Result**: The service returns the correct user.
+
+3. **getUser_ThrowsException_WhenUserDoesNotExist**
+    - **Description**: Verifies that the service throws an exception when the user does not exist.
+    - **Method**: `getUser_ThrowsException_WhenUserDoesNotExist()`
+    - **Expected Result**: The service throws a `HealtIAException`.
+
+4. **createUser_SuccessfullyCreatesUser**
+    - **Description**: Verifies that the service successfully creates a user.
+    - **Method**: `createUser_SuccessfullyCreatesUser()`
+    - **Expected Result**: The service calls the `save` method on the repository.
+
+5. **createUser_ThrowsException_WhenUserAlreadyExists**
+    - **Description**: Verifies that the service throws an exception when the user already exists.
+    - **Method**: `createUser_ThrowsException_WhenUserAlreadyExists()`
+    - **Expected Result**: The service throws a `HealtIAException`.
+
+6. **updateUser_SuccessfullyUpdatesUser**
+    - **Description**: Verifies that the service successfully updates a user.
+    - **Method**: `updateUser_SuccessfullyUpdatesUser()`
+    - **Expected Result**: The service calls the `save` method on the repository and updates the user's full name.
+
+7. **updateUser_ThrowsException_WhenUserDoesNotExist**
+    - **Description**: Verifies that the service throws an exception when the user does not exist.
+    - **Method**: `updateUser_ThrowsException_WhenUserDoesNotExist()`
+    - **Expected Result**: The service throws a `HealtIAException`.
+
+8. **deleteUser_SuccessfullyDeletesUser**
+    - **Description**: Verifies that the service successfully deletes a user.
+    - **Method**: `deleteUser_SuccessfullyDeletesUser()`
+    - **Expected Result**: The service calls the `delete` method on the repository.
+
+9. **deleteUser_ThrowsException_WhenUserDoesNotExist**
+    - **Description**: Verifies that the service throws an exception when the user does not exist.
+    - **Method**: `deleteUser_ThrowsException_WhenUserDoesNotExist()`
+    - **Expected Result**: The service throws a `HealtIAException`.
+### Tests in `UserControllerTest.java`
+
+1. **getAllUsers_ReturnsUsers**
+    - **Description**: Verifies that the controller returns a list of users.
+    - **Method**: `getAllUsers_ReturnsUsers()`
+    - **Expected Result**: The controller response is `202 Accepted` and the response body contains the list of users.
+
+2. **getUser_ReturnsUser_WhenExists**
+    - **Description**: Verifies that the controller returns a user when the user exists.
+    - **Method**: `getUser_ReturnsUser_WhenExists()`
+    - **Expected Result**: The controller response is `202 Accepted` and the response body contains the user.
+
+3. **getUser_ReturnsNotFound_WhenUserDoesNotExist**
+    - **Description**: Verifies that the controller returns a `404 Not Found` error when the user does not exist.
+    - **Method**: `getUser_ReturnsNotFound_WhenUserDoesNotExist()`
+    - **Expected Result**: The controller response is `404 Not Found` and the response body contains the error message `USER_NOT_FOUND`.
+
+4. **createUser_CreatesUser_Successfully**
+    - **Description**: Verifies that the controller successfully creates a user.
+    - **Method**: `createUser_CreatesUser_Successfully()`
+    - **Expected Result**: The service method `createUser` is called once.
+
+5. **updateUser_ReturnsAccepted_WhenUpdatedSuccessfully**
+    - **Description**: Verifies that the controller returns `202 Accepted` when a user is updated successfully.
+    - **Method**: `updateUser_ReturnsAccepted_WhenUpdatedSuccessfully()`
+    - **Expected Result**: The service method `updateUser` is called once.
+
+6. **deleteUser_ReturnsAccepted_WhenDeletedSuccessfully**
+    - **Description**: Verifies that the controller returns `202 Accepted` when a user is deleted successfully.
+    - **Method**: `deleteUser_ReturnsAccepted_WhenDeletedSuccessfully()`
+    - **Expected Result**: The controller response is `202 Accepted` and the response body contains the message `User deleted successfully`.
+
+7. **deleteUser_ReturnsNotFound_WhenUserDoesNotExist**
+    - **Description**: Verifies that the controller returns a `404 Not Found` error when the user does not exist.
+    - **Method**: `deleteUser_ReturnsNotFound_WhenUserDoesNotExist()`
+    - **Expected Result**: The controller response is `404 Not Found` and the response body contains the error message `USER_NOT_FOUND`.
+
+### Ejectute the tests
+![test](./src/main/resources/static/test.png)
+
+---
+
+## Licencia
+Este proyecto está licenciado bajo la Apache License 2.0. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+## Autor:
+* __Sebastian Zamora Urrego__ - [Github](https://github.com/SebZaUr)
+* __Johann Abelardo Amaya Lopez__ - [Github](https://github.com/JohannBulls)
+* __Cristian David Naranjo Orjuela__ - [Github](https://github.com/cristiandavid0124)
